@@ -1,0 +1,21 @@
+@{
+    ViewData["Title"] = "Inscription";
+}
+@model PROJET_FIN.Models.User;
+
+<h2>Inscrivez-vous</h2>
+<form method="post">
+@*
+<input name="username" type="text" placeholder="UserName" value =@ViewBag.username ></input><br/><br/>
+<input name="password" type="password" placeholder="Mot De Passe" value =@ViewBag.password></input><br/><br/>
+*@
+<input asp-for ="UserName" type="text" placeholder="Nom d'Utilisateur" size="25" />
+<br/><span asp-validation-for="UserName" class="text-danger"></span><br/>
+<input asp-for ="Email" type="text" placeholder="Courriel" size="25" />
+<br/><span asp-validation-for="Email" class="text-danger"></span><br/>
+<input asp-for ="Password" type="password" placeholder="Mot De Passe" size="25" />
+<br/><span asp-validation-for="Password" class="text-danger"></span><br/>
+
+<button type="submit" class="btn btn-success">Vous Inscrire</button>
+
+</form>

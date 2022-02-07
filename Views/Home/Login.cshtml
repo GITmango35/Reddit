@@ -1,0 +1,22 @@
+@{
+    ViewData["Title"] = "Connection";
+}
+@model PROJET_FIN.Models.User;
+
+<h2>Connectez-vous</h2>
+<form method="post"> 
+
+<input asp-for ="Email" type="text" placeholder="Courriel" name="Email" size="25" /><br/>
+<span asp-validation-for="Email" class="text-danger"></span><br/>
+<input asp-for ="Password" type="password" placeholder="Mot De Passe" size="25" /><br/>
+<span asp-validation-for="Password" class="text-danger"></span><br/>
+
+@* <button asp-controller="Home" asp-action="Index" class="btn btn-primary">Vous Connecter</button> *@
+<button type="submit" class="btn btn-primary">Vous Connecter</button>
+
+
+@* <button type="submit" class="btn btn-success">Vous Inscrire</button> *@
+
+</form>
+
+

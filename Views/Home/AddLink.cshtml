@@ -1,0 +1,12 @@
+@{
+    ViewData["Title"] = "Publier un lien";
+}
+
+<h2>Publiez un lien</h2>
+<form action="/Home/Addlink" method="post">
+    Link: <input type="text" name="link" class="form-control"> <br>
+    Description: <input type="text" name="description" class="form-control"> <br>
+
+    <button type="submit" class="btn btn-primary">Publier</button>
+    
+</form>
